@@ -11,6 +11,23 @@ public class Main {
         arr[i][j]=sc.nextInt();
       }
     }
+    if(column==1){
+      for(int t=0;t<row;t++){
+        for(int h=0;h<column;h++){
+          for(int r=1;r<column+1;r++){
+          if(arr[t][0]>arr[r][0]&&arr[t][0]>max){
+            max=arr[t][0];
+          }
+          if(arr[t][0]<arr[r][0]&&arr[t][0]>max){
+            max=arr[r][0];
+          }
+          }
+          System.out.println(arr[t][0]+" ");
+        }
+      }
+      System.out.println(max);
+    }
+    else{
     for(int i=0;i<row;i++){
       for(int j=0;j<column;j++){
         for(int k=1;k<column;k++){
@@ -26,5 +43,6 @@ public class Main {
       System.out.println();
     }
     System.out.println(max);
+    }
 }
 }
