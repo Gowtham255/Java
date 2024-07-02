@@ -1,0 +1,13 @@
+import java.util.*;
+ public class Student{
+    String name;
+    int id;
+ public Student(){
+   name="gowtham";
+   id=19;
+ }
+  public static void main(String[] args) {
+    Student s1=new Student();
+    System.out.println(s1.id);
+  }
+}
